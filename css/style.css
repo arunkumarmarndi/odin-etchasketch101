@@ -19,8 +19,3 @@
     background-color: lightgray;
 
 }
-
-/* Hover effect for columns */
-.col:hover {
-    background-color: black; /* Color change on hover */
-}
