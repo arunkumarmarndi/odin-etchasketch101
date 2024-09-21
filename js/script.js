@@ -9,7 +9,6 @@ for (let i = 0; i < 16; i++) {
         div_col.classList.add("col");
         div_row.appendChild(div_col);
     }
-
     canvas.appendChild(div_row);
 }
 
@@ -19,3 +18,9 @@ document.addEventListener('mouseover', function(event) {
         event.target.style.backgroundColor = "lightblue"; // Change to any color for the trail
     }
 });
+
+function myFunction(){
+    let number = prompt("Enter the number between 1 and 100:");
+    let intValue = parseInt(number, 10);
+    alert("The number is "+ intValue);
+}
