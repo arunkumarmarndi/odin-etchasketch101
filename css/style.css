@@ -1,0 +1,14 @@
+.canvas {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+
+}
+
+.col {
+    padding: 25px;
+    background-color: lightgray;
+}
