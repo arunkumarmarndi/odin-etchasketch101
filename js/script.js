@@ -1,4 +1,4 @@
-const canvas = document.querySelector(".canvas");
+const canvas = document.querySelector(".container");
 
 for (let i = 0; i < 16; i++) {
     const div_row = document.createElement("div");
@@ -12,3 +12,10 @@ for (let i = 0; i < 16; i++) {
 
     canvas.appendChild(div_row);
 }
+
+// Change background color when mouse moves over a grid cell (leaving a trail)
+document.addEventListener('mouseover', function(event) {
+    if (event.target.classList.contains('col')) {
+        event.target.style.backgroundColor = "lightblue"; // Change to any color for the trail
+    }
+});
