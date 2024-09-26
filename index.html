@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dynamic Grid</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js" defer></script> <!-- Changed to point to the JS file -->
+    <script src="js/script.js" defer></script>
 </head>
-<body>
-    <div class="button-container">
-        <h1>CHOOSE NUMBER OF SQUARES PER GRID</h1>
-        <button onclick="myFunction()">CLICK HERE</button>
+<body style="background-color: #fde2e4;">
+    <div class="wrapped-container">
+        <div class="button-container">
+            <h1>CHOOSE NUMBER OF SQUARES PER GRID</h1>
+            <button class="button" onclick="myFunction()">CLICK HERE</button>
+        </div>
+        <div class="container"></div>
     </div>
-    <div class="container"></div>
 </body>
 </html>

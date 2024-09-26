@@ -1,27 +1,51 @@
-.button-container{
+.wrapped-container{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-/* Ensure the container centers the grid */
+
+.button {
+    background-color: #bee1e6; /* Green */
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+    font-family: 'Roboto';
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 50px; /* Add some margin for spacing */
+    width: 960px;
+    height: 960px;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 10px;
+    /*border: 1px solid black;*/
 }
 
-/* Create rows with flexbox */
+/* Create rows using flexbox */
 .row {
     display: flex;
 }
 
 /* Define the grid cells (columns) */
 .col {
-    width: 40px;
-    height: 40px;
-    background-color: lightgray;
-
+    box-sizing: border-box;
 }
